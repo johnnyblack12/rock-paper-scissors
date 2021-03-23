@@ -6,12 +6,11 @@
 }
 
 .title {
-    font-family: 'Courier New', Courier, monospace;
     color: rgb(102, 230, 123);
     margin: auto;
     padding-top: 1vh;
     display: block;
-    font-size: 5em;
+    font-size: 7vw;
 }
 
 .rock-text {
@@ -33,7 +32,7 @@
     height: 80%;
     width: 96%;
     display: grid;
-    margin: 3% auto;
+    margin: 5% auto 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 20% 1fr 1fr 10%;
     grid-template-areas:
@@ -41,7 +40,6 @@
         "battleL battleC battleR"
         "stationL stationC stationR"
         "nameL nameC nameR";
-    font-family: monospace;
     justify-content: space-evenly;
     align-items: stretch;
 }
@@ -50,8 +48,7 @@
     grid-area: scoreL;
     color: rgb(102, 230, 123);
     text-shadow: 0px 0px 5px rgb(102, 230, 123);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 3em;
+    font-size: 4vw;
     margin: auto;
 }
 
@@ -72,8 +69,7 @@
     grid-area: scoreR;
     color: rgb(102, 230, 123);
     text-shadow: 0px 0px 5px rgb(102, 230, 123);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 3em;
+    font-size: 4vw;
     margin: auto;
 }
 
@@ -90,14 +86,17 @@
 
 .stationL {
     grid-area: stationL;
+    align-self: end;
 }
 
 .stationC {
     grid-area: stationC;
+    align-self: end;
 }
 
 .stationR {
     grid-area: stationR;
+    align-self: end;
 }
 
 .nameL {
@@ -133,7 +132,61 @@
 }
 
 .scoreboard-num {
-    font-size: 5em;
+    font-size: 5vw;
     color: rgb(102, 230, 123);
     margin: auto;
+}
+
+.rock {
+    font-size: 4vw;
+    color:rgb(235, 114, 215);
+    text-shadow: 0px 0px 5px rgb(235, 114, 215);
+    margin: auto;
+    padding-top: 2vh;
+}
+
+.paper {
+    font-size: 4vw;
+    color:rgb(100, 208, 250);
+    text-shadow: 0px 0px 5px rgb(100, 208, 250);
+    margin: auto;
+    padding-top: 2vh;
+}
+
+.scissors {
+    font-size: 4vw;
+    color:rgb(253, 217, 98);
+    text-shadow: 0px 0px 5px rgb(253, 217, 98); 
+    margin: auto;
+    padding-top: 2vh;
+}
+
+.rock-image {
+    height: 20vh;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.rock-image:hover {
+    box-shadow: 0px 0px 15px rgb(235, 114, 215);
+}
+
+.paper-image {
+    height: 20vh;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.paper-image:hover {
+    box-shadow: 0px 0px 15px rgb(100, 208, 250);
+}
+
+.scissors-image {
+    height: 20vh;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.scissors-image:hover {
+    box-shadow: 0px 0px 15px rgb(253, 217, 98);
 }
