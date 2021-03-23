@@ -1,0 +1,144 @@
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-color: #222;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(102, 230, 123);
+    margin: auto;
+    padding-top: 1vh;
+    display: block;
+    font-size: 5em;
+}
+
+.rock-text {
+    color: #222;
+    text-shadow: 0px 0px 7px rgb(235, 114, 215);
+}
+
+.paper-text {
+    color: #222;
+    text-shadow: 0px 0px 7px rgb(100, 208, 250);
+}
+
+.scissors-text {
+    color: #222;
+    text-shadow: 0px 0px 7px rgb(253, 217, 98);
+}
+
+.container {
+    height: 80%;
+    width: 96%;
+    display: grid;
+    margin: 3% auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 1fr 1fr 10%;
+    grid-template-areas:
+        "scoreL scoreC scoreR"
+        "battleL battleC battleR"
+        "stationL stationC stationR"
+        "nameL nameC nameR";
+    font-family: monospace;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.scoreL {
+    grid-area: scoreL;
+    color: rgb(102, 230, 123);
+    text-shadow: 0px 0px 5px rgb(102, 230, 123);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4em;
+    margin: auto;
+}
+
+.scoreC {
+    grid-area: scoreC;
+    background-color: rgb(102, 230, 123);
+    border-radius: 5px;
+    text-shadow: 0px 0px 5px rgb(102, 230, 123);
+    box-shadow: 0px 0px 5px rgb(102, 230, 123);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.scoreR {
+    grid-area: scoreR;
+    color: rgb(102, 230, 123);
+    text-shadow: 0px 0px 5px rgb(102, 230, 123);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4em;
+    margin: auto;
+}
+
+.battleL {
+    grid-area: battleL;
+}
+
+.battleC {
+    grid-area: battleC;
+}
+.battleR {
+    grid-area: battleR;
+}
+
+.stationL {
+    grid-area: stationL;
+}
+
+.stationC {
+    grid-area: stationC;
+}
+
+.stationR {
+    grid-area: stationR;
+}
+
+.nameL {
+    grid-area: nameL;
+}
+
+.nameC {
+    grid-area: nameC;
+}
+
+.nameR {
+    grid-area: nameR;
+}
+
+.score-text {
+    font-size: 4em;
+    color: rgb(102, 230, 123);
+}
+
+.scoreboard-l {
+    background-color: #222;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #222;
+    height: 80%;
+    width: 85%;
+    margin: 0 5% 0 10%;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.scoreboard-r {
+    background-color: #222;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #222;
+    height: 80%;
+    width: 85%;
+    margin: 0 10% 0 5%;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.scoreboard-num {
+    font-size: 8em;
+    color: rgb(102, 230, 123);
+    margin: auto;
+}
