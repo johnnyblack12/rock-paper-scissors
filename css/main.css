@@ -20,6 +20,10 @@
     text-align: left;
 }
 
+.link {
+    color: lightblue;
+}
+
 .rock-text {
     color: #222;
     text-shadow: 0px 0px 5px rgb(235, 114, 215);
