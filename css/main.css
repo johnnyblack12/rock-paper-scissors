@@ -198,6 +198,8 @@
 
 .rock-image:hover {
     box-shadow: 0px 0px 15px var(--rock-color);
+    transform: scale(1.1);
+    transition: 0.5s
 }
 
 .rock-image-clicked {
@@ -214,6 +216,8 @@
 
 .paper-image:hover {
     box-shadow: 0px 0px 15px var(--paper-color);
+    transform: scale(1.1);
+    transition: 0.5s
 }
 
 .paper-image-clicked {
@@ -230,6 +234,8 @@
 
 .scissors-image:hover {
     box-shadow: 0px 0px 15px var(--scissors-color);
+    transform: scale(1.1);
+    transition: 0.5s
 }
 
 .scissors-image-clicked {
