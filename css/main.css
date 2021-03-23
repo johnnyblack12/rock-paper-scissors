@@ -163,7 +163,7 @@
 
 .rock-image {
     height: 20vh;
-    border-radius: 50px;
+    border-radius: 25px;
     box-shadow: 0px 0px 5px #000;
 }
 
@@ -173,7 +173,7 @@
 
 .paper-image {
     height: 20vh;
-    border-radius: 50px;
+    border-radius: 25px;
     box-shadow: 0px 0px 5px #000;
 }
 
@@ -183,7 +183,7 @@
 
 .scissors-image {
     height: 20vh;
-    border-radius: 50px;
+    border-radius: 25px;
     box-shadow: 0px 0px 5px #000;
 }
 
