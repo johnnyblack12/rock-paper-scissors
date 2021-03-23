@@ -8,7 +8,7 @@
 .title {
     color: rgb(102, 230, 123);
     margin: auto;
-    padding-top: 1vh;
+    padding-top: 2vh;
     display: block;
     font-size: 5vw;
 }
@@ -43,7 +43,7 @@
     height: 80%;
     width: 96%;
     display: grid;
-    margin: 3% auto 0 auto;
+    margin: 2% auto 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 20% 1fr 1fr 10%;
     grid-template-areas:
