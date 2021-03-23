@@ -3,22 +3,25 @@
 <head>
     <meta charset="utf-8" />
     <title>Rock Paper Scissors</title>
-    <script charset="utf-8" src="js/main.js"></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
     <div class="background">
-        <p class="attrib">Rock Paper Scissors Neon Icons by: <a target="_blank" href="https://www.vecteezy.com/vector-art/691497-rock-paper-scissors-neon-icons"><span class="link">nightwolfdezines</span></a></p>
+        <p class="attrib">Rock Paper Scissors Neon Icons by: 
+            <a target="_blank" href="https://www.vecteezy.com/vector-art/691497-rock-paper-scissors-neon-icons">
+                <span class="link">nightwolfdezines</span>
+            </a>
+        </p>
         <p class="title"><span class="rock-text">ROCK</span> <span class="paper-text">PAPER</span> <span class="scissors-text">SCISSORS</span></p>
         <div class="container">
             <div class="scoreL">USER</div>
             <div class="scoreC">
                 <div class="scoreboard-l">
-                    <p class="scoreboard-num">0</p>
+                    <p class="scoreboard-num" id="user-score">0</p>
                 </div>
                 <div class="scoreboard-r">
-                    <p class="scoreboard-num">0</p>
+                    <p class="scoreboard-num" id="computer-score">0</p>
                 </div>
             </div>
             <div class="scoreR">COMPUTER</div>
@@ -26,13 +29,13 @@
             <div class="battleC"></div>
             <div class="battleR"></div>
             <div class="stationL">
-                <img class="rock-image" src="images/rock.png">
+                <img class="rock-image" id="rock" src="images/rock.png">
             </div>
             <div class="stationC">
-                <img class="paper-image" src="images/paper.png">
+                <img class="paper-image" id="paper" src="images/paper.png">
             </div>
             <div class="stationR">
-                <img class="scissors-image" src="images/scissors.png">
+                <img class="scissors-image" id="scissors" src="images/scissors.png">
             </div>
             <div class="nameL">
                 <div class="rock">ROCK</div>
@@ -45,5 +48,6 @@
             </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

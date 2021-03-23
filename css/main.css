@@ -1,3 +1,10 @@
+:root {
+    --rock-color: rgb(235, 114, 215);
+    --paper-color: rgb(100, 208, 250);
+    --scissors-color: rgb(253, 217, 98);
+    --text-color: rgb(102, 230, 123);
+}   
+
 .background {
     height: 100vh;
     width: 100vw;
@@ -6,7 +13,6 @@
 }
 
 .title {
-    color: rgb(102, 230, 123);
     margin: auto;
     padding-top: 2vh;
     display: block;
@@ -15,7 +21,7 @@
 
 .attrib {
     display: block;
-    color: rgb(102, 230, 123);
+    color: var(--text-color);
     font-size: 1vh;
     text-align: left;
 }
@@ -26,17 +32,17 @@
 
 .rock-text {
     color: #222;
-    text-shadow: 0px 0px 5px rgb(235, 114, 215);
+    text-shadow: 0px 0px 5px var(--rock-color);
 }
 
 .paper-text {
     color: #222;
-    text-shadow: 0px 0px 5px rgb(100, 208, 250);
+    text-shadow: 0px 0px 5px var(--paper-color);
 }
 
 .scissors-text {
     color: #222;
-    text-shadow: 0px 0px 5px rgb(253, 217, 98);
+    text-shadow: 0px 0px 5px var(--scissors-color);
 }
 
 .container {
@@ -57,8 +63,8 @@
 
 .scoreL {
     grid-area: scoreL;
-    color: rgb(102, 230, 123);
-    text-shadow: 0px 0px 5px rgb(102, 230, 123);
+    color: var(--text-color);
+    text-shadow: 0px 0px 5px var(--text-color);
     font-size: 4vw;
     margin: auto;
 }
@@ -69,8 +75,8 @@
     border-radius: 5px;
     height: 15vh;
     max-height: 15vw;
-    text-shadow: 0px 0px 5px rgb(102, 230, 123);
-    box-shadow: 0px 0px 10px rgb(102, 230, 123);
+    text-shadow: 0px 0px 5px var(--text-color);
+    box-shadow: 0px 0px 10px var(--text-color);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -81,21 +87,28 @@
 
 .scoreR {
     grid-area: scoreR;
-    color: rgb(102, 230, 123);
-    text-shadow: 0px 0px 5px rgb(102, 230, 123);
+    color: var(--text-color);
+    text-shadow: 0px 0px 5px var(--text-color);
     font-size: 4vw;
     margin: auto;
 }
 
 .battleL {
     grid-area: battleL;
+    align-self: center;
 }
 
 .battleC {
     grid-area: battleC;
+    color: var(--text-color);
+    text-shadow: 0px 0px 5px var(--text-color);
+    font-size: 4vw;
+    margin: auto;
 }
+
 .battleR {
     grid-area: battleR;
+    align-self: center;
 }
 
 .stationL {
@@ -128,7 +141,7 @@
 .scoreboard-l {
     background-color: #222;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgb(102, 230, 123);
+    box-shadow: 0px 0px 10px var(--text-color);
     max-height: 80%;
     max-width: 85%;
     margin: 0 5% 0 10%;
@@ -138,7 +151,7 @@
 .scoreboard-r {
     background-color: #222;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgb(102, 230, 123);
+    box-shadow: 0px 0px 10px var(--text-color);
     max-height: 80%;
     max-width: 85%;
     margin: 0 10% 0 5%;
@@ -147,66 +160,132 @@
 
 .scoreboard-num {
     font-size: 5vw;
-    color: rgb(102, 230, 123);
+    color: var(--text-color);
     margin: auto;
 }
 
 .rock {
     font-size: 3vw;
-    color:rgb(235, 114, 215);
-    text-shadow: 0px 0px 5px rgb(235, 114, 215);
+    color:var(--rock-color);
+    text-shadow: 0px 0px 5px var(--rock-color);
     margin: auto;
     padding-top: 2vh;
 }
 
 .paper {
     font-size: 3vw;
-    color:rgb(100, 208, 250);
-    text-shadow: 0px 0px 5px rgb(100, 208, 250);
+    color:var(--paper-color);
+    text-shadow: 0px 0px 5px var(--paper-color);
     margin: auto;
     padding-top: 2vh;
 }
 
 .scissors {
     font-size: 3vw;
-    color:rgb(253, 217, 98);
-    text-shadow: 0px 0px 5px rgb(253, 217, 98); 
+    color:var(--scissors-color);
+    text-shadow: 0px 0px 5px var(--scissors-color); 
     margin: auto;
     padding-top: 2vh;
 }
 
 .rock-image {
-    width: 25vw;
-    max-height: 255px;
-    max-width: 225px;
-    border-radius: 50px;
+    width: 20vw;
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 25px;
     box-shadow: 0px 0px 5px #000;
 }
 
 .rock-image:hover {
-    box-shadow: 0px 0px 15px rgb(235, 114, 215);
+    box-shadow: 0px 0px 15px var(--rock-color);
+}
+
+.rock-image-clicked {
+    box-shadow: 0px 0px 15px var(--rock-color);
 }
 
 .paper-image {
-    width: 25vw;
-    max-height: 255px;
-    max-width: 225px;
-    border-radius: 50px;
+    width: 20vw;
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 25px;
     box-shadow: 0px 0px 5px #000;
 }
 
 .paper-image:hover {
-    box-shadow: 0px 0px 15px rgb(100, 208, 250);
+    box-shadow: 0px 0px 15px var(--paper-color);
+}
+
+.paper-image-clicked {
+    box-shadow: 0px 0px 15px var(--paper-color);
 }
 
 .scissors-image {
-    width: 25vw;
-    max-height: 255px;
-    max-width: 225px;
-    border-radius: 50px;
+    width: 20vw;
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 25px;
     box-shadow: 0px 0px 5px #000;
 }
 
 .scissors-image:hover {
-    box-shadow: 0px 0px 15px rgb(253, 217, 98);
+    box-shadow: 0px 0px 15px var(--scissors-color);
+}
+
+.scissors-image-clicked {
+    box-shadow: 0px 0px 15px var(--scissors-color);
+}
+
+#user-win {
+    animation-name: user-attack;
+    animation-duration: 1500ms;
+}
+
+@keyframes user-attack {
+    0% {margin: 0vw;}
+    50% {margin: 0vw;}
+    60% {margin-top: 5vw;}
+    70% {margin: 0vw;} 
+    75% {margin-bottom: 5vw;}
+    80% {margin: 0vw;}
+    85% {margin-left: 5vw;}
+    100% {margin: 0vw;}
+}
+
+#user-lose {
+    animation-name: user-fade;
+    animation-duration: 3s;
+}
+
+@keyframes user-fade {
+    0% {opacity: 100%;}
+    50% {opacity: 90%;}
+    100% {opacity: 0%;}
+}
+
+#computer-win {
+    animation-name: computer-attack;
+    animation-duration: 1500ms;
+}
+
+@keyframes computer-attack {
+    0% {margin: 0vw;}
+    50% {margin: 0vw;}
+    60% {margin-top: 5vw;}
+    70% {margin: 0vw;} 
+    75% {margin-bottom: 5vw;}
+    80% {margin: 0vw;}
+    85% {margin-right: 5vw;}
+    100% {margin-right: 0vw;}
+}
+
+#computer-lose {
+    animation-name: computer-fade;
+    animation-duration: 3s;
+}
+
+@keyframes computer-fade {
+    0% {opacity: 100%;}
+    50% {opacity: 90%;}
+    100% {opacity: 0%;}
 }
