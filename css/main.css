@@ -10,29 +10,29 @@
     margin: auto;
     padding-top: 1vh;
     display: block;
-    font-size: 7vw;
+    font-size: 5vw;
 }
 
 .rock-text {
     color: #222;
-    text-shadow: 0px 0px 7px rgb(235, 114, 215);
+    text-shadow: 0px 0px 5px rgb(235, 114, 215);
 }
 
 .paper-text {
     color: #222;
-    text-shadow: 0px 0px 7px rgb(100, 208, 250);
+    text-shadow: 0px 0px 5px rgb(100, 208, 250);
 }
 
 .scissors-text {
     color: #222;
-    text-shadow: 0px 0px 7px rgb(253, 217, 98);
+    text-shadow: 0px 0px 5px rgb(253, 217, 98);
 }
 
 .container {
     height: 80%;
     width: 96%;
     display: grid;
-    margin: 5% auto 0 auto;
+    margin: 3% auto 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 20% 1fr 1fr 10%;
     grid-template-areas:
@@ -138,7 +138,7 @@
 }
 
 .rock {
-    font-size: 4vw;
+    font-size: 3vw;
     color:rgb(235, 114, 215);
     text-shadow: 0px 0px 5px rgb(235, 114, 215);
     margin: auto;
@@ -146,7 +146,7 @@
 }
 
 .paper {
-    font-size: 4vw;
+    font-size: 3vw;
     color:rgb(100, 208, 250);
     text-shadow: 0px 0px 5px rgb(100, 208, 250);
     margin: auto;
@@ -154,7 +154,7 @@
 }
 
 .scissors {
-    font-size: 4vw;
+    font-size: 3vw;
     color:rgb(253, 217, 98);
     text-shadow: 0px 0px 5px rgb(253, 217, 98); 
     margin: auto;
