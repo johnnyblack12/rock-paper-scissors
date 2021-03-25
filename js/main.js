@@ -7,8 +7,8 @@ let stationR = document.querySelector('.stationR');
 let userScore = document.querySelector('#user-score');
 let computerScore = document.querySelector('#computer-score');
 let messageArea = document.querySelector('.battleC');
-let score;
 
+let score;
 let decision;
 let clicked = false;
 

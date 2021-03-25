@@ -244,18 +244,15 @@
 
 #user-win {
     animation-name: user-attack;
-    animation-duration: 1500ms;
+    animation-duration: 2s;
 }
 
 @keyframes user-attack {
-    0% {margin: 0vw;}
-    50% {margin: 0vw;}
-    60% {margin-top: 5vw;}
-    70% {margin: 0vw;} 
-    75% {margin-bottom: 5vw;}
-    80% {margin: 0vw;}
-    85% {margin-left: 5vw;}
-    100% {margin: 0vw;}
+    0% {margin: 0;}
+    50% {margin: 0;}
+    80% {margin: 0 2vw 0 0;}
+    98% {margin: 0 0 0 5vw;}
+    100% {margin: 0;}
 }
 
 #user-lose {
@@ -265,24 +262,21 @@
 
 @keyframes user-fade {
     0% {opacity: 100%;}
-    50% {opacity: 90%;}
+    66% {opacity: 100%;}
     100% {opacity: 0%;}
 }
 
 #computer-win {
     animation-name: computer-attack;
-    animation-duration: 1500ms;
+    animation-duration: 2s;
 }
 
 @keyframes computer-attack {
-    0% {margin: 0vw;}
-    50% {margin: 0vw;}
-    60% {margin-top: 5vw;}
-    70% {margin: 0vw;} 
-    75% {margin-bottom: 5vw;}
-    80% {margin: 0vw;}
-    85% {margin-right: 5vw;}
-    100% {margin-right: 0vw;}
+    0% {margin: 0;}
+    50% {margin: 0;}
+    80% {margin: 0 0 0 2vw;}
+    98% {margin: 0 5vw 0 0;}
+    100% {margin: 0;}
 }
 
 #computer-lose {
@@ -292,6 +286,6 @@
 
 @keyframes computer-fade {
     0% {opacity: 100%;}
-    50% {opacity: 90%;}
+    66% {opacity: 100%;}
     100% {opacity: 0%;}
 }
