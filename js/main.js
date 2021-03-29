@@ -1,3 +1,7 @@
+if(!('ontouchstart' in document.documentElement)) {
+    document.documentElement.className += " no-touch";
+}
+
 let rock = document.querySelector('#rock');
 let paper = document.querySelector('#paper');
 let scissors = document.querySelector('#scissors');
@@ -18,13 +22,29 @@ function scoreUp(playerScore) {
     playerScore.textContent = score;
 }
 
+function playAgain() {
+    let playAgain = document.createElement('p');
+    playAgain.textContent = 'PLAY AGAIN';
+    playAgain.classList.add('play-again');
+    playAgain.addEventListener('click', () => {
+        location.reload()
+    });
+    const br = document.createElement('br');
+    const br2 = document.createElement('br');
+    messageArea.appendChild(br);
+    messageArea.appendChild(br2);
+    messageArea.appendChild(playAgain);
+}
+
 function winCheck() {
     if (Number(userScore.textContent) < 5 && Number(computerScore.textContent) < 5) {
         clicked = false;
     } else if (Number(userScore.textContent) == 5){
         messageArea.textContent = 'YOU WIN!'
+        playAgain();
     } else if (Number(computerScore.textContent) == 5){
         messageArea.textContent = 'YOU LOSE!'
+        playAgain();
     }
 }
 

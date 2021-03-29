@@ -3,6 +3,7 @@
     --paper-color: rgb(100, 208, 250);
     --scissors-color: rgb(253, 217, 98);
     --text-color: rgb(102, 230, 123);
+    cursor: default;
 }   
 
 .background {
@@ -102,7 +103,7 @@
     grid-area: battleC;
     color: var(--text-color);
     text-shadow: 0px 0px 5px var(--text-color);
-    font-size: 4vw;
+    font-size: 3vw;
     margin: auto;
 }
 
@@ -164,6 +165,20 @@
     margin: auto;
 }
 
+.play-again {
+    font-size: 2vw;
+    background-color: #222;
+    margin: 1vh auto auto auto;
+    padding: 0.5vh 1vh; 
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px var(--text-color);
+}
+
+.play-again:hover {
+    background-color: var(--text-color);
+    color: #222;
+}
+
 .rock {
     font-size: 3vw;
     color:var(--rock-color);
@@ -204,6 +219,7 @@
 
 .rock-image-clicked {
     box-shadow: 0px 0px 15px var(--rock-color);
+    transform: scale(1);
 }
 
 .paper-image {
@@ -222,6 +238,7 @@
 
 .paper-image-clicked {
     box-shadow: 0px 0px 15px var(--paper-color);
+    transform: scale(1);
 }
 
 .scissors-image {
@@ -240,19 +257,20 @@
 
 .scissors-image-clicked {
     box-shadow: 0px 0px 15px var(--scissors-color);
+    transform: scale(1);
 }
 
 #user-win {
     animation-name: user-attack;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 
 @keyframes user-attack {
     0% {margin: 0;}
-    50% {margin: 0;}
-    80% {margin: 0 2vw 0 0;}
-    98% {margin: 0 0 0 5vw;}
-    100% {margin: 0;}
+    33% {margin: 0;}
+    50% {margin: 0 2vw 0 0;}
+    55% {margin: 0 0 0 5vw;}
+    100% {margin: 0 0 0 5vw;}
 }
 
 #user-lose {
@@ -268,15 +286,15 @@
 
 #computer-win {
     animation-name: computer-attack;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 
 @keyframes computer-attack {
     0% {margin: 0;}
-    50% {margin: 0;}
-    80% {margin: 0 0 0 2vw;}
-    98% {margin: 0 5vw 0 0;}
-    100% {margin: 0;}
+    33% {margin: 0;}
+    50% {margin: 0 0 0 2vw;}
+    55% {margin: 0 5vw 0 0;}
+    100% {margin: 0 5vw 0 0;}
 }
 
 #computer-lose {
