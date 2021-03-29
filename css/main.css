@@ -174,7 +174,7 @@
     box-shadow: 0px 0px 10px var(--text-color);
 }
 
-.play-again:hover {
+.no-touch .play-again:hover {
     background-color: var(--text-color);
     color: #222;
 }
@@ -211,7 +211,7 @@
     box-shadow: 0px 0px 5px #000;
 }
 
-.rock-image:hover {
+.no-touch .rock-image:hover {
     box-shadow: 0px 0px 15px var(--rock-color);
     transform: scale(1.1);
     transition: 0.5s
@@ -219,7 +219,6 @@
 
 .rock-image-clicked {
     box-shadow: 0px 0px 15px var(--rock-color);
-    transform: scale(1);
 }
 
 .paper-image {
@@ -230,7 +229,7 @@
     box-shadow: 0px 0px 5px #000;
 }
 
-.paper-image:hover {
+.no-touch .paper-image:hover {
     box-shadow: 0px 0px 15px var(--paper-color);
     transform: scale(1.1);
     transition: 0.5s
@@ -238,7 +237,6 @@
 
 .paper-image-clicked {
     box-shadow: 0px 0px 15px var(--paper-color);
-    transform: scale(1);
 }
 
 .scissors-image {
@@ -249,7 +247,7 @@
     box-shadow: 0px 0px 5px #000;
 }
 
-.scissors-image:hover {
+.no-touch .scissors-image:hover {
     box-shadow: 0px 0px 15px var(--scissors-color);
     transform: scale(1.1);
     transition: 0.5s
@@ -257,7 +255,6 @@
 
 .scissors-image-clicked {
     box-shadow: 0px 0px 15px var(--scissors-color);
-    transform: scale(1);
 }
 
 #user-win {
